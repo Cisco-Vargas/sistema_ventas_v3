@@ -25,12 +25,16 @@ $usuario = obtenerUsuarioPorId($id);
             <input type="text" name="nombre" class="form-control" value="<?php echo $usuario->nombre;?>" id="nombre" placeholder="Escribe el nombre completo del usuario">
         </div>
         <div class="mb-3">
+            <label for="contraseña" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" value="<?php echo $usuario->password;?>" id="password" placeholder="La contraseña por defecto es 0000">
+        </div>
+        <div class="mb-3">
             <label for="telefono" class="form-label">Teléfono</label>
-            <input type="text" name="telefono" class="form-control" value="<?php echo $usuario->telefono;?>" id="telefono" placeholder="Ej. 2111568974">
+            <input type="text" name="telefono" class="form-control" value="<?php echo $usuario->telefono;?>" id="telefono" placeholder="Ej. 8097162252">
         </div>
         <div class="mb-3">
             <label for="direccion" class="form-label">Dirección</label>
-            <input type="text" name="direccion" class="form-control" value="<?php echo $usuario->direccion;?>" id="direccion" placeholder="Ej. Av Collar 1005 Col Las Cruces">
+            <input type="text" name="direccion" class="form-control" value="<?php echo $usuario->direccion;?>" id="direccion" placeholder="Ej. Av. Hugo Chavez, 11905, Los Tres Brazos">
         </div>
 
         <div class="text-center mt-3">
@@ -48,10 +52,12 @@ $usuario = obtenerUsuarioPorId($id);
 if(isset($_POST['registrar'])){
     $usuario = $_POST['usuario'];
     $nombre = $_POST['nombre'];
+    $password = $_POST['password'];
     $telefono = $_POST['telefono'];
     $direccion = $_POST['direccion'];
     if(empty($usuario)
     ||empty($nombre) 
+    ||empty($password)
     || empty($telefono) 
     || empty($direccion)){
         echo'
@@ -62,7 +68,7 @@ if(isset($_POST['registrar'])){
     } 
     
     include_once "funciones.php";
-    $resultado = editarUsuario($usuario, $nombre, $telefono, $direccion, $id);
+    $resultado = editarUsuario($usuario, $nombre, $password, $telefono, $direccion, $id);
     if($resultado){
         echo'
         <div class="alert alert-success mt-3" role="alert">

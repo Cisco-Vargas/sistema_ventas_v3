@@ -31,9 +31,9 @@ function eliminarUsuario($id){
     return eliminar($sentencia, $id);
 }
 
-function editarUsuario($usuario, $nombre, $telefono, $direccion, $id){
-    $sentencia = "UPDATE usuarios SET usuario = ?, nombre = ?, telefono = ?, direccion = ? WHERE id = ?";
-    $parametros = [$usuario, $nombre, $telefono, $direccion, $id];
+function editarUsuario($usuario, $nombre, $contraseña, $telefono, $direccion, $id){
+    $sentencia = "UPDATE usuarios SET usuario = ?, nombre = ?, contraseña = ?, telefono = ?, direccion = ? WHERE id = ?";
+    $parametros = [$usuario, $nombre, $contraseña, $telefono, $direccion, $id];
     return editar($sentencia, $parametros);
 }
 

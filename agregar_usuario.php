@@ -25,6 +25,7 @@ if(empty($_SESSION['usuario'])) header("location: login.php");
             <label for="direccion" class="form-label">Dirección</label>
             <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Ej. Av. Hugo Chavez, 11905, Los Tres Brazos">
         </div>
+        <p style="text-align: center;">La contraseña por defecto es "0000", asegurate de cambiarla para proteger tu usuario.</p>
         <div class="text-center mt-3">
             <input type="submit" name="registrar" value="Registrar" class="btn btn-primary btn-lg">
             
