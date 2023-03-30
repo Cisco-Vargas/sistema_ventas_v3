@@ -6,11 +6,7 @@ if (!$id) {
 }
 include_once "funciones.php";
 
-$resultado = eliminarUsuario($id);
-if(!resultado){
-    echo "Error al eliminar";
-    return;
-}
+eliminarUsuario($id);
 
 header("Location: usuarios.php");
-?>
+?
