@@ -1,5 +1,5 @@
 <?php
-include_once "encabezado.php";
+/*include_once "encabezado.php";
 
 if(isset($_POST['ingresar'])){
     if(empty($_POST['usuario']) || empty($_POST['password'])){
@@ -33,4 +33,5 @@ if(isset($_POST['ingresar'])){
     $_SESSION['idUsuario'] = $datosSesion->id;
     header("location: index.php");
 }
+*/
 ?>
