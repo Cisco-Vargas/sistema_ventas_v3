@@ -6,11 +6,7 @@ if (!$id) {
 }
 include_once "funciones.php";
 
-$resultado = eliminarCliente($id);
-if(!resultado){
-    echo "Error al eliminar";
-    return;
-}
+eliminarCliente($id);
 
 header("Location: clientes.php");
 ?>

@@ -11,11 +11,11 @@ if(empty($_SESSION['usuario'])) header("location: login.php");
     <form method="post">
         <div class="mb-3">
             <label for="codigo" class="form-label">Código de barras</label>
-            <input type="text" name="codigo" class="form-control" id="codigo" placeholder="Escribe el código de barras del producto">
+            <input type="text" name="codigo" class="form-control" id="codigo" placeholder="Escribe el codigo de barras del producto">
         </div>
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre o descripción</label>
-            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ej. Papas">
+            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ej. Platano">
         </div>
         <div class="row">
             <div class="col">
@@ -28,7 +28,7 @@ if(empty($_SESSION['usuario'])) header("location: login.php");
             </div>
             <div class="col">
                 <label for="existencia" class="form-label">Existencia</label>
-                <input type="number" name="existencia" step="any" id="existencia" class="form-control" placeholder="Existencia" aria-label="">
+                <input type="number" name="existencia" step="any" id="existencia" class="form-control" placeholder="Cantidad de Producto" aria-label="">
             </div>
             
         </div>

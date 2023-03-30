@@ -6,11 +6,6 @@ if (!$id) {
 }
 include_once "funciones.php";
 
-$resultado = eliminarProducto($id);
-if(!resultado){
-    echo "Error al eliminar";
-    return;
-}
-
-header("Location: productos.php");
+eliminarProducto($id);
+header("location: productos.php");
 ?>

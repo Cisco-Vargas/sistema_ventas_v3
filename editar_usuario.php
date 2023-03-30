@@ -18,7 +18,7 @@ $usuario = obtenerUsuarioPorId($id);
     <form method="post">
         <div class="mb-3">
             <label for="usuario" class="form-label">Nombre de usuario</label>
-            <input type="text" name="usuario" class="form-control" value="<?php echo $usuario->usuario;?>" id="usuario" placeholder="Escribe el nombre de usuario. Ej. Paco">
+            <input type="text" name="usuario" class="form-control" value="<?php echo $usuario->usuario;?>" id="usuario" placeholder="Escribe el nombre de usuario. Ej. Juan">
         </div>
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre completo</label>
@@ -30,11 +30,19 @@ $usuario = obtenerUsuarioPorId($id);
         </div>
         <div class="mb-3">
             <label for="telefono" class="form-label">Teléfono</label>
+<<<<<<< HEAD
             <input type="text" name="telefono" class="form-control" value="<?php echo $usuario->telefono;?>" id="telefono" placeholder="Ej. 8097162252">
         </div>
         <div class="mb-3">
             <label for="direccion" class="form-label">Dirección</label>
             <input type="text" name="direccion" class="form-control" value="<?php echo $usuario->direccion;?>" id="direccion" placeholder="Ej. Av. Hugo Chavez, 11905, Los Tres Brazos">
+=======
+            <input type="text" name="telefono" class="form-control" value="<?php echo $usuario->telefono;?>" id="telefono" placeholder="Ej. 809-788-2089">
+        </div>
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" name="direccion" class="form-control" value="<?php echo $usuario->direccion;?>" id="direccion" placeholder="Ej. Av Venezuela, Sirena">
+>>>>>>> develop
         </div>
 
         <div class="text-center mt-3">
@@ -72,7 +80,7 @@ if(isset($_POST['registrar'])){
     if($resultado){
         echo'
         <div class="alert alert-success mt-3" role="alert">
-            Información de usuario actualizada con éxito.
+            Información de usuario actualizada con exito.
         </div>';
     }
     
