@@ -23,7 +23,7 @@ $producto = obtenerProductoPorId($id);
         </div>
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre o descripción</label>
-            <input type="text" name="nombre" class="form-control" value="<?php echo $producto->nombre;?>" id="nombre" placeholder="Ej. Papas">
+            <input type="text" name="nombre" class="form-control" value="<?php echo $producto->nombre;?>" id="nombre" placeholder="Ej. Yuca">
         </div>
         <div class="row">
             <div class="col">
@@ -35,8 +35,8 @@ $producto = obtenerProductoPorId($id);
                 <input type="number" name="venta" step="any" value="<?php echo $producto->venta;?>" id="venta" class="form-control" placeholder="Precio de venta" aria-label="">
             </div>
             <div class="col">
-                <label for="existencia" class="form-label">Existencia</label>
-                <input type="number" name="existencia" step="any" value="<?php echo $producto->existencia;?>" id="existencia" class="form-control" placeholder="Existencia" aria-label="">
+                <label for="existencia" class="form-label">Cantidad</label>
+                <input type="number" name="existencia" step="any" value="<?php echo $producto->existencia;?>" id="existencia" class="form-control" placeholder="Cantidad de productos" aria-label="">
             </div>
             
         </div>

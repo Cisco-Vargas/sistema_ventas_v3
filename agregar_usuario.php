@@ -11,7 +11,7 @@ if(empty($_SESSION['usuario'])) header("location: login.php");
     <form method="post">
         <div class="mb-3">
             <label for="usuario" class="form-label">Nombre de usuario</label>
-            <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Escribe el nombre de usuario. Ej. Paco">
+            <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Escribe el nombre de usuario. Ej. Jose">
         </div>
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre completo</label>
