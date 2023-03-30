@@ -16,13 +16,8 @@ include_once "encabezado.php";
                     <div class="form-group pb-3">
                         <input type="password" placeholder="Contraseña" class="form-control" name="password" id="exampleInputPassword1">
                     </div>
-
                     <div class="pb-2">
-<<<<<<< HEAD
-                        <button type="submit" name="ingresar" class="btn btn-primary w-100 font-weight-bold mt-2">Ingresar al login</button>
-=======
-                        <button type="submit" name="ingresar" class="btn btn-primary w-100 font-weight-bold mt-2">Ingresar al sistema de ventas</button>
->>>>>>> develop
+                        <button type="submit" name="ingresar" class="btn btn-primary w-100 font-weight-bold mt-2">Ingresar</button>
                     </div>
                 </form>
              </div>
