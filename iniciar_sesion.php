@@ -34,5 +34,4 @@ if(isset($_POST['ingresar'])){
     $_SESSION['idUsuario'] = $datosSesion->id;
     header("location: index.php");
 }
-*/
 ?>
