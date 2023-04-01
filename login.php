@@ -1,7 +1,10 @@
 <?php
-include_once "encabezado.php";
+/*include_once "encabezado.php";*/
 ?>
+
 <?php
+include_once "encabezado.php";
+
 if(isset($_POST['ingresar'])){
     if(empty($_POST['usuario']) || empty($_POST['password'])){
         echo'
@@ -52,7 +55,7 @@ if(isset($_POST['ingresar'])){
                         <input type="password" placeholder="Contraseña" class="form-control" name="password" id="exampleInputPassword1">
                     </div>
                     <div class="pb-2">
-                        <button type="submit" name="ingresar" class="btn btn-primary w-100 font-weight-bold mt-2">Ingresar</button>
+                        <button type="submit" name="ingresar" class="btn btn-primary w-100 font-weight-bold mt-2">Login</button>
                     </div>
                 </form>
                 <p></p>
