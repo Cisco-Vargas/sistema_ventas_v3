@@ -14,7 +14,8 @@ if(isset($_POST['ingresar'])){
         </div>';
         return;
     }
-
+}
+?>
 <div class="container">
     <div class="row m-5 no-gutters shadow-lg">
         <div class="col-md-6 d-none d-md-block">

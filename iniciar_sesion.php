@@ -1,5 +1,5 @@
 <?php
-/*
+
 include_once "encabezado.php";
 
 if(isset($_POST['ingresar'])){
